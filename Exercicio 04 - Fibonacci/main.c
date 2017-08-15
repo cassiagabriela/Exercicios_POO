@@ -15,6 +15,11 @@ int main(){
 
     printf("Informe um numero natural: ");
     scanf("%d", &num);
+    
+    while(num < 0){
+        print("Valor invalido!. Informe outro: ");
+        scanf("%d", &num);
+    }
 
     if(num > 0){
         for(i=1;flag == 0;i++){
