@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+/*
 int fatorial(int num){
     int i, fat=1;
 
@@ -28,6 +29,7 @@ float cosse(int num){
 
     return cosseno; 
 }
+*/
 
 int main(){
     float dist, dHorizontal, altura;
@@ -40,7 +42,7 @@ int main(){
 
     ang = (ang*M_PI)/180;
     dHorizontal =(float) dist*cos(ang);
-    printf("%.2f Cosseno\n",cosse(ang) );
+    printf("%.2f Cosseno\n",cos(ang));
     altura = sqrt(pow(dist,2) - pow(dHorizontal,2));
 
     printf("\nA distancia horizontal eh: %.2f\n", dHorizontal);
