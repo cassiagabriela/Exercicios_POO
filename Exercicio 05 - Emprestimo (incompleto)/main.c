@@ -2,20 +2,16 @@
 #include <stdio.h>
 
 int main(){
-    float emprestimo, mens, juros, valorJuro;
-    int i;
 
-    printf("Informe o valor do emprestimo: R$");
-    scanf("%f", &emprestimo);
-    printf("Informe o valor da menslidade: R$");
-    scanf("%f", &mensalidade);
-    printf("Informe o juros a.m : ");
-    scanf("%f", &juros);
+    int i, num1, num2;
 
-    valorJuro = emprestimo * juros;
+    printf("Informe o intervalo com numeros naturais:\n");
+    scanf("%d %d", &num1, &num2);
 
-    for(i=0;i<12;i++){
-        printf("Mês 1:\n")
+    printf("\nDentro do intervalo os numeros impar sao:\n");
+    for(i=num1+1;i<num2;i++){
+        if(i%2 != 0)
+            printf("O numero %d eh impar.\n", i);
     }
 
     return 0;
