@@ -3,7 +3,7 @@
 
 // Calcula o numero de Fibonacci na posicao num
 int numFibonacci(int num){
-    if(num == 1 || num == 2){
+    if(num <= 2){
         return 1;
     }
     // O numero de Fibonacci e a soma dos numero antecessores
